@@ -1,5 +1,4 @@
-import com.android.build.gradle.tasks.SourceJarTask
-import com.gradleup.librarian.gradle.librarianModule
+import com.gradleup.librarian.gradle.Librarian
 
 plugins {
   id("com.android.library")
@@ -7,7 +6,7 @@ plugins {
   id("org.jetbrains.kotlin.plugin.compose")
 }
 
-librarianModule(true)
+Librarian.module(project)
 
 android {
   namespace = "com.apollographql.compose"

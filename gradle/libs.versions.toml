@@ -1,8 +1,8 @@
 [versions]
-kotlin-plugin = "2.0.0"
-apollo = "4.0.0-rc.2"
-compose = "1.6.8"
-android-plugin = "8.2.2"
+kotlin-plugin = "2.2.10"
+apollo = "4.3.3"
+compose = "1.9.0"
+android-plugin = "8.12.0"
 
 [libraries]
 librarian = "com.gradleup.librarian:core:0.0.3"
@@ -14,3 +14,9 @@ compose-runtime = { group = "androidx.compose.runtime", name = "runtime", versio
 compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "compose" }
 kotlin-plugin-compose = { group = "org.jetbrains.kotlin", name = "compose-compiler-gradle-plugin", version.ref = "kotlin-plugin" }
 androidx-paging-compose = "androidx.paging:paging-compose:1.0.0-alpha20"
+
+[plugins]
+kgp = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin-plugin" }
+compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin-plugin" }
+librarian = {id = "com.gradleup.librarian", version = "0.1.0"}
+agp = { id = "com.android.library", version.ref = "android-plugin"}
