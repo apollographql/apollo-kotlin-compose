@@ -1,9 +1,0 @@
-public final class com/apollographql/compose/StateKt {
-	public static final fun toState (Lcom/apollographql/apollo/ApolloCall;Lkotlin/coroutines/CoroutineContext;Landroidx/compose/runtime/Composer;II)Landroidx/compose/runtime/State;
-	public static final fun watchAsState (Lcom/apollographql/apollo/ApolloCall;Lkotlin/coroutines/CoroutineContext;Landroidx/compose/runtime/Composer;II)Landroidx/compose/runtime/State;
-}
-
-public final class com/apollographql/compose/VersionKt {
-	public static final field VERSION Ljava/lang/String;
-}
-
