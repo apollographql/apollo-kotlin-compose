@@ -1,10 +1,10 @@
-import com.gradleup.librarian.gradle.librarianRoot
+import com.gradleup.librarian.gradle.Librarian
 
 plugins {
-  id("org.jetbrains.kotlin.multiplatform").version("2.0.0").apply(false)
-  id("org.jetbrains.kotlin.plugin.compose").version("2.0.0").apply(false)
-  id("com.gradleup.librarian").version("0.0.4").apply(false)
-  id("com.android.library").version("8.2.2").apply(false)
+  alias(libs.plugins.kgp).apply(false)
+  alias(libs.plugins.compose).apply(false)
+  alias(libs.plugins.librarian).apply(false)
+  alias(libs.plugins.agp).apply(false)
 }
 
-librarianRoot()
+Librarian.root(project)
