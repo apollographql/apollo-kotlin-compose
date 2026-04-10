@@ -1,6 +1,6 @@
 [versions]
 kotlin-plugin = "2.2.10"
-apollo = "4.3.3"
+apollo = "4.4.3"
 compose = "1.9.0"
 android-plugin = "8.12.0"
 
